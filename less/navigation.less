@@ -1,1 +1,33 @@
 // Navigation Styles here
+
+nav{
+    .flex-layout(space-between, center);
+    padding: 5% 0;
+    border-bottom: 2px dashed grey;
+
+    .links {
+        .flex-layout(space-between, center);
+        width: 40%;
+    }//links closer
+    a {
+        font-size: 1.6rem;
+        color: black;
+        &:hover{
+            color: @eastern-blue;
+        }//psudo closer
+    }//a closer
+    .logo a {
+        font-size: 3.2rem;
+        font-family: 'Indie Flower', cursive;
+    }//logo size
+    @media @mobile {
+        padding-bottom: 0;
+        flex-direction: column;
+
+        div.links {
+            margin-bottom: 2%;
+            width: 100%;
+        }//media links closer
+    }//media closer
+
+}//nav closer
